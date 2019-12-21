@@ -1,11 +1,18 @@
-const https = require('https');
+"use strict";
 
-https.get('https://mrodevicemgr.edog.officeapps.live.com/mrodevicemgrsvc/api/v2/C2RReleaseData?audienceFFN=c4a7726f-06ea-48e2-a13a-9d78849eb706', (res) => {
-    res.on('data', (d) => {
-        let obj = JSON.parse(d);
-        let id = obj.FFN;
-        let ver = obj.AvailableBuild;
+const https = require("https");
 
-        console.log(`Dogfood_DCEXT     : ${id} : ${ver}`);
+const getFFN = "c4a7726f-06ea-48e2-a13a-9d78849eb706";
+const getBuild = "16.0.10730.20426";
+
+https.get(`https://mrodevicemgr.edog.officeapps.live.com/mrodevicemgrsvc/api/v2/C2RReleaseData?audienceFFN=${getFFN}`, (getResponse) => {
+    getResponse.on("data", (getData) => {
+        if (getResponse.statusCode === 200) {
+            const getParsedData = JSON.parse(getData);
+            const getBuild = getParsedData.AvailableBuild;
+            console.log(`Dogfood_DCEXT     : ${getFFN} : ${getBuild}`);
+        } else {
+            console.log(`Dogfood_DCEXT     : ${getFFN} : ${getBuild}`);
+        }
     });
 });
