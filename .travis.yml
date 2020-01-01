@@ -13,9 +13,10 @@ script:
   - echo $(date +%s) = $(date) > lastUpdated
 deploy:
   provider: pages
-  edge: true
+  edge: false
   name: $GITHUB_NAME
   email: $GITHUB_EMAIL
   token: $GITHUB_TOKEN
   target_branch: master
+  skip_cleanup: true
   keep_history: true
