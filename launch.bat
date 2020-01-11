@@ -17,6 +17,7 @@
     node sources\Insiders_LTSC.js
     echo:
     node sources\Production_CC.js
+    node sources\Production_MEC.js
     node sources\Production_DC.js
     node sources\Production_LTSC.js
 ) > defconfig
