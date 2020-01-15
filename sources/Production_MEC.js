@@ -3,7 +3,7 @@
 const https = require("https");
 
 const getFFN = "55336b82-a18d-4dd6-b5f6-9e5095c314a6";
-const getBuild = "16.0.12228.20416";
+const getBuild = "16.0.12228.20462";
 
 function showFFNAndBuild(getFFN, getBuild) {
     console.log(`Production_MEC    : ${getFFN} : ${getBuild}`);
