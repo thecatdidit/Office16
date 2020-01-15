@@ -3,7 +3,7 @@
 const https = require("https");
 
 const getFFN = "f2e724c1-748f-4b47-8fb8-8e0d210e9208";
-const getBuild = "16.0.10353.20037";
+const getBuild = "16.0.10354.20022";
 
 function showFFNAndBuild(getFFN, getBuild) {
     console.log(`Production_LTSC   : ${getFFN} : ${getBuild}`);
