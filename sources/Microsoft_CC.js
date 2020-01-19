@@ -3,7 +3,7 @@
 const https = require("https");
 
 const getFFN = "5462eee5-1e97-495b-9370-853cd873bb07";
-const getBuild = "16.0.12430.20050";
+const getBuild = "16.0.12430.20120";
 
 function showFFNAndBuild(getFFN, getBuild) {
     console.log(`Microsoft_CC      : ${getFFN} : ${getBuild}`);
