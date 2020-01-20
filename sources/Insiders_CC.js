@@ -3,7 +3,7 @@
 const https = require("https");
 
 const getFFN = "64256afe-f5d9-4f86-8936-8840a6a4f5be";
-const getBuild = "16.0.12430.20050";
+const getBuild = "16.0.12430.20120";
 
 function showFFNAndBuild(getFFN, getBuild) {
     console.log(`Insiders_CC       : ${getFFN} : ${getBuild}`);
