@@ -3,7 +3,7 @@
 const https = require("https");
 
 const getFFN = "c4a7726f-06ea-48e2-a13a-9d78849eb706";
-const getBuild = "16.0.11328.20512";
+const getBuild = "16.0.11328.20526";
 
 function showFFNAndBuild(getFFN, getBuild) {
     console.log(`Dogfood_DCEXT     : ${getFFN} : ${getBuild}`);
